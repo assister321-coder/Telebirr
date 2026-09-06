@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+    <!-- Primary brand colors -->
+    <color name="brand_primary">#168A45</color>
+    <color name="brand_primary_dark">#126E38</color>
+    <color name="brand_primary_light">#8CC63F</color>
+    <color name="brand_secondary">#F2A61B</color>
+
+    <!-- Background colors -->
+    <color name="bg_primary">#F4F6F3</color>
+    <color name="bg_surface">#FFFFFF</color>
+    <color name="bg_page">#F0F2EF</color>
+    <color name="bg_hero">#8CC63F</color>
+
+    <!-- Text colors -->
+    <color name="text_primary">#24352B</color>
+    <color name="text_secondary">#69736D</color>
+    <color name="text_hint">#9AA39D</color>
+    <color name="text_white">#FFFFFF</color>
+
+    <!-- Accent colors -->
+    <color name="accent_blue">#2F80ED</color>
+    <color name="accent_orange">#F2B735</color>
+    <color name="accent_pink">#C24E7E</color>
+    <color name="accent_purple">#7C5CE0</color>
+    <color name="accent_teal">#0E9488</color>
+    <color name="accent_amber">#D98A00</color>
+    <color name="accent_brown">#B8541D</color>
+
+    <!-- Status colors -->
+    <color name="status_success">#168A45</color>
+    <color name="status_warning">#D98A00</color>
+    <color name="status_error">#E74C3C</color>
+
+    <!-- UI colors -->
+    <color name="divider">#E7ECE8</color>
+    <color name="soft_bg">#F0F2EF</color>
+    <color name="card_bg">#FFFFFF</color>
+    <color name="card_shadow">#1A168A45</color>
+
+    <!-- Transaction type colors -->
+    <color name="tx_sent">#E74C3C</color>
+    <color name="tx_received">#168A45</color>
+    <color name="tx_bill">#D98A00</color>
+    <color name="tx_airtime">#C24E7E</color>
+    <color name="tx_bank">#2B7CD3</color>
+    <color name="tx_merchant">#0E9488</color>
+
+    <!-- Icon background -->
+    <color name="icon_bg_default">#F0F2EF</color>
+    <color name="icon_bg_white">#FFFFFF</color>
+
+    <!-- Transparent -->
+    <color name="transparent">#00000000</color>
+    <color name="overlay">#73000000</color>
+</resources>

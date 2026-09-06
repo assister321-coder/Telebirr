@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+    <!-- Green circle background -->
+    <path
+        android:fillColor="#168A45"
+        android:pathData="M54,54m-30,0a30,30 0,1 1,60 0a30,30 0,1 1,-60 0" />
+    <!-- T shape for telebirr -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M40,38h28v4h-28z" />
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M52,38v20h4v-20z" />
+    <!-- Signal arcs -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M44,48 Q54,42 64,48"
+        android:strokeWidth="2.5"
+        android:strokeColor="#FFFFFF"
+        android:fillColor="#00000000" />
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M46,54 Q54,49 62,54"
+        android:strokeWidth="2.5"
+        android:strokeColor="#FFFFFF"
+        android:fillColor="#00000000" />
+</vector>

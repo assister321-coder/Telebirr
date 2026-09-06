@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+    <!-- Font sizes - slightly smaller as requested -->
+    <dimen name="text_xxxs">9sp</dimen>
+    <dimen name="text_xxs">10sp</dimen>
+    <dimen name="text_xs">11sp</dimen>
+    <dimen name="text_sm">12sp</dimen>
+    <dimen name="text_base">13sp</dimen>
+    <dimen name="text_md">14sp</dimen>
+    <dimen name="text_lg">16sp</dimen>
+    <dimen name="text_xl">18sp</dimen>
+    <dimen name="text_xxl">20sp</dimen>
+    <dimen name="text_xxxl">24sp</dimen>
+    <dimen name="text_huge">28sp</dimen>
+    <dimen name="text_balance">30sp</dimen>
+
+    <!-- Icon sizes - slightly smaller as requested -->
+    <dimen name="icon_xs">14dp</dimen>
+    <dimen name="icon_sm">16dp</dimen>
+    <dimen name="icon_md">18dp</dimen>
+    <dimen name="icon_lg">22dp</dimen>
+    <dimen name="icon_xl">26dp</dimen>
+    <dimen name="icon_service">28dp</dimen>
+    <dimen name="icon_avatar">44dp</dimen>
+
+    <!-- Spacing -->
+    <dimen name="spacing_xxs">2dp</dimen>
+    <dimen name="spacing_xs">4dp</dimen>
+    <dimen name="spacing_sm">8dp</dimen>
+    <dimen name="spacing_md">12dp</dimen>
+    <dimen name="spacing_lg">16dp</dimen>
+    <dimen name="spacing_xl">20dp</dimen>
+    <dimen name="spacing_xxl">24dp</dimen>
+    <dimen name="spacing_xxxl">32dp</dimen>
+
+    <!-- Corner radius -->
+    <dimen name="radius_sm">8dp</dimen>
+    <dimen name="radius_md">12dp</dimen>
+    <dimen name="radius_lg">16dp</dimen>
+    <dimen name="radius_xl">20dp</dimen>
+    <dimen name="radius_xxl">24dp</dimen>
+    <dimen name="radius_full">999dp</dimen>
+
+    <!-- Component sizes -->
+    <dimen name="btn_height">48dp</dimen>
+    <dimen name="btn_height_sm">40dp</dimen>
+    <dimen name="input_height">52dp</dimen>
+    <dimen name="header_height">56dp</dimen>
+    <dimen name="status_bar_height">28dp</dimen>
+    <dimen name="bottom_nav_height">60dp</dimen>
+    <dimen name="service_item_height">74dp</dimen>
+
+    <!-- Card -->
+    <dimen name="card_padding">16dp</dimen>
+    <dimen name="card_elevation">2dp</dimen>
+
+    <!-- Service grid icon container -->
+    <dimen name="service_icon_size">40dp</dimen>
+</resources>

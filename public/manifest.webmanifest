@@ -1,0 +1,24 @@
+{
+  "name": "telebirr SuperApp",
+  "short_name": "telebirr",
+  "description": "telebirr SuperApp — Ethiopian digital wallet",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#8CC63F",
+  "theme_color": "#8CC63F",
+  "orientation": "portrait",
+  "icons": [
+    {
+      "src": "https://images.sftcdn.net/images/t_app-icon-s/p/6ef58b81-d4cb-4309-b7d9-0228be98241e/2673368560/telebirr-logo",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "https://images.sftcdn.net/images/t_app-icon-s/p/6ef58b81-d4cb-4309-b7d9-0228be98241e/2673368560/telebirr-logo",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ]
+}

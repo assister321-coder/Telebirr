@@ -1,0 +1,147 @@
+@import "tailwindcss";
+
+/* ───────────────────────── Design tokens (live theme variables) ─── */
+:root {
+  --bg: #ffffff;
+  --surface: #ffffff;
+  --ink: #17201b;
+  --sub: #69736d;
+  --line: #e4e9e6;
+  --soft: #f5f5f5;
+  --page: #ffffff;
+  --font: "Inter", "Noto Sans Ethiopic", system-ui, -apple-system, sans-serif;
+  color-scheme: light;
+}
+
+.dark {
+  --bg: #0d1310;
+  --surface: #161d19;
+  --ink: #ecf2ef;
+  --sub: #8da096;
+  --line: #26332b;
+  --soft: #1a2420;
+  --page: #0a0f0c;
+  color-scheme: dark;
+}
+
+[data-lang="am"] {
+  --font: "Noto Sans Ethiopic", "Inter", system-ui, sans-serif;
+}
+
+@theme inline {
+  --color-bg: var(--bg);
+  --color-surface: var(--surface);
+  --color-ink: var(--ink);
+  --color-sub: var(--sub);
+  --color-line: var(--line);
+  --color-soft: var(--soft);
+  --color-page: var(--page);
+  --font-sans: var(--font);
+}
+
+@theme {
+  --breakpoint-xs: 22.5rem; /* 360px — small phones */
+  --color-brand-50: #ebf7f0;
+  --color-brand-100: #d2eddd;
+  --color-brand-200: #a8ddbe;
+  --color-brand-300: #74c898;
+  --color-brand-400: #3dad6e;
+  --color-brand-500: #168a45;
+  --color-brand-600: #11793a;
+  --color-brand-700: #106b35;
+  --color-brand-800: #0c5529;
+  --color-brand-900: #08411f;
+  --color-brand-950: #053018;
+  --color-danger: #d93636;
+  --color-warn: #d98a00;
+  --shadow-card: 0 4px 16px rgb(23 32 27 / 0.05);
+  --shadow-pop: 0 16px 48px rgb(8 20 13 / 0.16);
+  --animate-spin-slow: spin 1.2s linear infinite;
+}
+
+/* ───────────────────────── Base ─────────────────────────────────── */
+html,
+body,
+#root {
+  height: 100%;
+}
+
+body {
+  @apply bg-white text-ink font-sans antialiased;
+  -webkit-tap-highlight-color: transparent;
+  overscroll-behavior: none;
+  /* stop iOS auto-zoom + horizontal drift on small phones */
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+  overflow-x: hidden;
+}
+
+/* Never let long names / amounts blow out flex rows on mobile */
+main, section, article, header, footer, div, p, span, button, a {
+  overflow-wrap: anywhere;
+}
+
+/* iOS zooms any input under 16px on focus — keep them at 16px on touch */
+@media (max-width: 640px) {
+  input,
+  textarea,
+  select {
+    font-size: 16px !important;
+  }
+}
+
+input,
+button,
+textarea,
+select {
+  font-family: inherit;
+}
+
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+::selection {
+  background: rgb(22 138 69 / 0.18);
+}
+
+/* Dashed separator used on receipts / confirmations */
+.dashed-sep {
+  height: 1px;
+  background-image: linear-gradient(to right, var(--sub) 18%, transparent 0%);
+  background-size: 9px 1px;
+  background-repeat: repeat-x;
+  opacity: 0.45;
+}
+
+/* Subtle loading shimmer */
+@keyframes shimmer {
+  0% {
+    background-position: -320px 0;
+  }
+  100% {
+    background-position: 320px 0;
+  }
+}
+.shimmer {
+  background-image: linear-gradient(
+    90deg,
+    var(--line) 0%,
+    var(--surface) 50%,
+    var(--line) 100%
+  );
+  background-size: 640px 100%;
+  animation: shimmer 1.4s ease-in-out infinite;
+  opacity: 0.6;
+}
+
+@media (max-width: 1023px) {
+  .home-recent,
+  .home-demo-badge {
+    display: none;
+  }
+}

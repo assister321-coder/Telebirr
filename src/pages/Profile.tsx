@@ -31,7 +31,7 @@ export default function Profile() {
         <motion.div initial={{ opacity: 0, y: 14 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.4 }}>
           <Card className="relative overflow-visible px-5 pt-7 pb-5 flex flex-col items-center text-center">
             <div className="relative">
-              <Avatar name={user.name} src="/avatar.jpg" size={84} className="ring-4 ring-soft" />
+              <Avatar name={user.name} src="/avatar.jpg" size={78} className="ring-4 ring-soft" />
               <button
                 onClick={demo}
                 className="absolute -bottom-1 -right-1 w-8 h-8 rounded-full bg-brand-500 text-white border-[3px] border-surface flex items-center justify-center shadow-card"
@@ -40,9 +40,9 @@ export default function Profile() {
                 <Pencil size={13} />
               </button>
             </div>
-            <h2 className="mt-3.5 text-[19px] font-extrabold tracking-tight">{user.name}</h2>
-            <p className="text-[13.5px] text-sub mt-0.5">{user.phone}</p>
-            <span className="mt-3 inline-flex items-center gap-1.5 bg-soft text-brand-700 dark:text-brand-300 text-[11.5px] font-bold px-3 py-1.5 rounded-full border border-brand-100">
+            <h2 className="mt-3.5 text-[17px] font-extrabold tracking-tight">{user.name}</h2>
+            <p className="text-[12px] text-sub mt-0.5">{user.phone}</p>
+            <span className="mt-3 inline-flex items-center gap-1.5 bg-soft text-brand-700 dark:text-brand-300 text-[10.5px] font-bold px-3 py-1.5 rounded-full border border-brand-100">
               <ShieldCheck size={13} />
               {t("prof.tier")}
             </span>

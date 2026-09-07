@@ -36,22 +36,22 @@ function PinScreen({
         className="absolute left-4 xs:left-7 top-4 xs:top-5 w-9 h-9 flex items-center justify-center"
         aria-label="Close"
       >
-        <X size={27} strokeWidth={1.5} />
+        <X size={24} strokeWidth={1.5} />
       </button>
 
       <div className="pt-[76px] xs:pt-[92px] text-center px-4">
-        <h1 className="text-[26px] xs:text-[29px] font-normal tracking-tight">Enter PIN</h1>
+        <h1 className="text-[24px] xs:text-[27px] font-normal tracking-tight">Enter PIN</h1>
         <div className="mt-6 xs:mt-7 flex justify-center gap-3 xs:gap-4">
           {Array.from({ length: 6 }).map((_, index) => (
             <span
               key={index}
-              className={`w-[17px] h-[17px] xs:w-[19px] xs:h-[19px] rounded-full border ${
+              className={`w-[16px] h-[16px] xs:w-[18px] xs:h-[18px] rounded-full border ${
                 index < pin.length ? "border-[#24352b] bg-[#24352b]" : "border-[#dfe5dc]"
               }`}
             />
           ))}
         </div>
-        <button onClick={forgot} className="mt-6 xs:mt-7 text-[16px] xs:text-[18px] font-semibold">
+        <button onClick={forgot} className="mt-6 xs:mt-7 text-[15px] xs:text-[17px] font-semibold">
           Forgot PIN
         </button>
       </div>
@@ -70,7 +70,7 @@ function PinScreen({
             className="h-10 flex items-center justify-center"
             aria-label="Delete PIN digit"
           >
-            <Delete size={30} className="xs:w-[34px] xs:h-[34px]" strokeWidth={1.3} />
+            <Delete size={26} className="xs:w-[30px] xs:h-[30px]" strokeWidth={1.3} />
           </button>
         </div>
       </div>
@@ -207,11 +207,11 @@ export default function Login() {
           <AnimatePresence mode="wait">
             {step === "phone" ? (
               <motion.div key="h1" initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }} exit={{ opacity: 0 }}>
-                <p className="text-[20px] xs:text-[22px] font-extrabold text-[#2B7CD3] leading-snug">
+                <p className="text-[18px] xs:text-[20px] font-extrabold text-[#2B7CD3] leading-snug">
                   {t("login.step1Title1")}
                 </p>
-                <p className="text-[18px] xs:text-[20px] font-bold text-[#2B7CD3] mt-1">{t("login.step1Title2")}</p>
-                <p className="text-[26px] xs:text-[28px] font-extrabold text-ink mt-1">{t("login.step1Title3")}</p>
+                <p className="text-[16px] xs:text-[18px] font-bold text-[#2B7CD3] mt-1">{t("login.step1Title2")}</p>
+                <p className="text-[24px] xs:text-[26px] font-extrabold text-ink mt-1">{t("login.step1Title3")}</p>
                 <span className="block w-10 h-[3px] bg-brand-500 rounded-full mx-auto mt-2" />
               </motion.div>
             ) : (
@@ -233,7 +233,7 @@ export default function Login() {
               <motion.div key="phone" initial={{ opacity: 0, x: 16 }} animate={{ opacity: 1, x: 0 }} exit={{ opacity: 0, x: -16 }} transition={{ duration: 0.3 }}>
                 <p className="text-[14px] text-sub font-medium mb-2">{t("login.mobileNumber")}</p>
                 <div
-                    className={`flex items-center gap-2.5 h-[58px] px-4 rounded-[10px] border bg-white ${
+                    className={`flex items-center gap-2.5 h-[54px] px-4 rounded-[10px] border bg-white ${
                     errPhone ? "border-danger" : "border-line"
                   }`}
                 >
@@ -250,7 +250,7 @@ export default function Login() {
                 {errPhone && <p className="mt-2 text-[12.5px] text-danger font-medium">{errPhone}</p>}
 
                 <div className="mt-6">
-                  <Btn onClick={next} className="!h-[58px] !bg-[#2F80ED] hover:!bg-[#2569c4]">
+                  <Btn onClick={next} className="!h-[54px] !bg-[#2F80ED] hover:!bg-[#2569c4]">
                     {t("login.next")}
                   </Btn>
                 </div>

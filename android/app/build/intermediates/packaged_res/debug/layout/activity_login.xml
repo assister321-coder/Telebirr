@@ -1,0 +1,351 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/bg_surface"
+    android:fitsSystemWindows="true">
+
+    <!-- App bar with logos -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/header_height"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:paddingHorizontal="@dimen/spacing_lg"
+        android:background="@color/bg_surface"
+        android:elevation="1dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="ethio telecom"
+            android:textSize="@dimen/text_md"
+            android:textColor="@color/text_primary"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="telebirr"
+            android:textSize="@dimen/text_xl"
+            android:textColor="@color/brand_primary"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <!-- Language selector -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="end"
+        android:paddingHorizontal="@dimen/spacing_lg"
+        android:paddingVertical="@dimen/spacing_sm">
+
+        <TextView
+            android:id="@+id/tvLanguage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="English"
+            android:textSize="@dimen/text_base"
+            android:textColor="@color/text_primary"
+            android:paddingHorizontal="@dimen/spacing_sm"
+            android:paddingVertical="@dimen/spacing_xs"
+            android:background="?attr/selectableItemBackground" />
+    </LinearLayout>
+
+    <!-- Content scrollable area -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingHorizontal="@dimen/spacing_xl"
+            android:gravity="center_horizontal">
+
+            <!-- Title area -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_marginTop="@dimen/spacing_xxxl">
+
+                <TextView
+                    android:id="@+id/tvStepTitle1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/login_welcome"
+                    android:textSize="@dimen/text_xl"
+                    android:textStyle="bold"
+                    android:textColor="@color/accent_blue" />
+
+                <TextView
+                    android:id="@+id/tvStepTitle2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/login_all_in_one"
+                    android:textSize="@dimen/text_lg"
+                    android:textStyle="bold"
+                    android:textColor="@color/accent_blue"
+                    android:layout_marginTop="@dimen/spacing_xs" />
+
+                <TextView
+                    android:id="@+id/tvStepTitle3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/login_title"
+                    android:textSize="@dimen/text_xxl"
+                    android:textStyle="bold"
+                    android:textColor="@color/text_primary"
+                    android:layout_marginTop="@dimen/spacing_xs" />
+
+                <View
+                    android:layout_width="40dp"
+                    android:layout_height="3dp"
+                    android:layout_marginTop="@dimen/spacing_sm"
+                    android:background="@color/brand_primary" />
+            </LinearLayout>
+
+            <!-- Phone input section -->
+            <LinearLayout
+                android:id="@+id/phoneSection"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="@dimen/spacing_xxl">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/login_mobile_number"
+                    android:textSize="@dimen/text_sm"
+                    android:textColor="@color/text_secondary"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/input_height"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical"
+                    android:background="@drawable/bg_input_field"
+                    android:paddingHorizontal="@dimen/spacing_lg"
+                    android:layout_marginTop="@dimen/spacing_sm">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="+251"
+                        android:textSize="@dimen/text_md"
+                        android:textColor="@color/text_primary"
+                        android:textStyle="bold" />
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="24dp"
+                        android:layout_marginHorizontal="@dimen/spacing_md"
+                        android:background="@color/divider" />
+
+                    <EditText
+                        android:id="@+id/etPhone"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@null"
+                        android:hint="9XX XXX XXX"
+                        android:textSize="@dimen/text_md"
+                        android:textColor="@color/text_primary"
+                        android:textColorHint="@color/text_hint"
+                        android:inputType="phone"
+                        android:maxLines="1"
+                        android:importantForAutofill="no" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/tvPhoneError"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/text_sm"
+                    android:textColor="@color/status_error"
+                    android:textStyle="bold"
+                    android:visibility="gone"
+                    android:layout_marginTop="@dimen/spacing_xs" />
+
+                <!-- Next button -->
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btnNext"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/btn_height"
+                    android:layout_marginTop="@dimen/spacing_xl"
+                    android:text="@string/continue_btn"
+                    android:textSize="@dimen/text_md"
+                    android:textAllCaps="false"
+                    app:backgroundTint="@color/accent_blue"
+                    app:cornerRadius="@dimen/radius_lg" />
+
+                <!-- Don't have account -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_marginTop="@dimen/spacing_lg">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/login_no_account"
+                        android:textSize="@dimen/text_sm"
+                        android:textColor="@color/text_secondary" />
+
+                    <TextView
+                        android:id="@+id/tvCreateAccount"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="  @{string/login_create_new}"
+                        android:textSize="@dimen/text_sm"
+                        android:textColor="@color/brand_primary"
+                        android:textStyle="bold"
+                        android:paddingHorizontal="@dimen/spacing_sm" />
+                </LinearLayout>
+
+                <!-- Help links -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_marginTop="@dimen/spacing_lg"
+                    android:paddingBottom="@dimen/spacing_xl">
+
+                    <TextView
+                        android:id="@+id/tvHub"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/login_hub"
+                        android:textSize="@dimen/text_base"
+                        android:textColor="@color/brand_primary"
+                        android:textStyle="bold"
+                        android:paddingHorizontal="@dimen/spacing_xxl" />
+
+                    <TextView
+                        android:id="@+id/tvHelp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/login_help"
+                        android:textSize="@dimen/text_base"
+                        android:textColor="@color/brand_primary"
+                        android:textStyle="bold"
+                        android:paddingHorizontal="@dimen/spacing_xxl" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <!-- PIN section (hidden initially) -->
+            <LinearLayout
+                android:id="@+id/pinSection"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:visibility="gone"
+                android:layout_marginTop="@dimen/spacing_xxxl">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/login_enter_pin"
+                    android:textSize="@dimen/text_xxl"
+                    android:textStyle="bold"
+                    android:textColor="@color/text_primary" />
+
+                <TextView
+                    android:id="@+id/tvPinSub"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/text_sm"
+                    android:textColor="@color/text_secondary"
+                    android:layout_marginTop="@dimen/spacing_sm" />
+
+                <View
+                    android:layout_width="40dp"
+                    android:layout_height="3dp"
+                    android:layout_marginTop="@dimen/spacing_sm"
+                    android:background="@color/brand_primary" />
+
+                <!-- PIN dots -->
+                <LinearLayout
+                    android:id="@+id/pinDotsContainer"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="@dimen/spacing_xxl"
+                    android:gravity="center" />
+
+                <!-- Forgot PIN -->
+                <TextView
+                    android:id="@+id/tvForgotPin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/login_forgot_pin"
+                    android:textSize="@dimen/text_lg"
+                    android:textStyle="bold"
+                    android:textColor="@color/text_primary"
+                    android:layout_marginTop="@dimen/spacing_xl" />
+
+                <!-- Number pad -->
+                <GridLayout
+                    android:id="@+id/numberPad"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:columnCount="3"
+                    android:rowCount="4"
+                    android:layout_marginTop="@dimen/spacing_xxxl"
+                    android:useDefaultMargins="true" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <!-- Footer -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:paddingBottom="@dimen/spacing_lg">
+
+        <TextView
+            android:id="@+id/tvTerms"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/login_terms"
+            android:textSize="@dimen/text_sm"
+            android:textColor="@color/brand_primary"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/login_copyright"
+            android:textSize="@dimen/text_xxs"
+            android:textColor="@color/text_hint"
+            android:layout_marginTop="@dimen/spacing_sm" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/login_version"
+            android:textSize="@dimen/text_xxs"
+            android:textColor="@color/text_hint"
+            android:alpha="0.5"
+            android:layout_marginTop="@dimen/spacing_xxs" />
+    </LinearLayout>
+
+</LinearLayout>

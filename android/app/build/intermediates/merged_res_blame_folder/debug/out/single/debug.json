@@ -1,0 +1,370 @@
+[
+    {
+        "merged": "com.telebirr.superapp-merged_res-50:/drawable_ic_arrow_back.xml.flat",
+        "source": "com.telebirr.superapp-main-52:/drawable/ic_arrow_back.xml"
+    },
+    {
+        "merged": "com.telebirr.superapp-merged_res-50:/drawable_ic_shield_plus.xml.flat",
+        "source": "com.telebirr.superapp-main-52:/drawable/ic_shield_plus.xml"
+    },
+    {
+        "merged": "com.telebirr.superapp-merged_res-50:/drawable_ic_chevron_down.xml.flat",
+        "source": "com.telebirr.superapp-main-52:/drawable/ic_chevron_down.xml"
+    },
+    {
+        "merged": "com.telebirr.superapp-merged_res-50:/layout_activity_login.xml.flat",
+        "source": "com.telebirr.superapp-main-52:/layout/activity_login.xml"
+    },
+    {
+        "merged": "com.telebirr.superapp-merged_res-50:/drawable_ic_close.xml.flat",
+        "source": "com.telebirr.superapp-main-52:/drawable/ic_close.xml"
+    },
+    {
+        "merged": "com.telebirr.superapp-merged_res-50:/layout_fragment_transactions.xml.flat",
+        "source": "com.telebirr.superapp-main-52:/layout/fragment_transactions.xml"
+    },
+    {
+        "merged": "com.telebirr.superapp-merged_res-50:/drawable_ic_delete.xml.flat",
+        "source": "com.telebirr.superapp-main-52:/drawable/ic_delete.xml"
+    },
+    {
+        "merged": "com.telebirr.superapp-merged_res-50:/drawable_bg_chip_unselected.xml.flat",
+        "source": "com.telebirr.superapp-main-52:/drawable/bg_chip_unselected.xml"
+    },
+    {
+        "merged": "com.telebirr.superapp-merged_res-50:/drawable_bg_button_green.xml.flat",
+        "source": "com.telebirr.superapp-main-52:/drawable/bg_button_green.xml"
+    },
+    {
+        "merged": "com.telebirr.superapp-merged_res-50:/drawable_ic_bike.xml.flat",
+        "source": "com.telebirr.superapp-main-52:/drawable/ic_bike.xml"
+    },
+    {
+        "merged": "com.telebirr.superapp-merged_res-50:/drawable_bg_orange_strip.xml.flat",
+        "source": "com.telebirr.superapp-main-52:/drawable/bg_orange_strip.xml"
+    },
+    {
+        "merged": "com.telebirr.superapp-merged_res-50:/drawable_bg_button_blue.xml.flat",
+        "source": "com.telebirr.superapp-main-52:/drawable/bg_button_blue.xml"
+    },
+    {
+        "merged": "com.telebirr.superapp-merged_res-50:/drawable_ic_plane.xml.flat",
+        "source": "com.telebirr.superapp-main-52:/drawable/ic_plane.xml"
+    },
+    {
+        "merged": "com.telebirr.superapp-merged_res-50:/drawable_ic_sparkles.xml.flat",
+        "source": "com.telebirr.superapp-main-52:/drawable/ic_sparkles.xml"
+    },
+    {
+        "merged": "com.telebirr.superapp-merged_res-50:/drawable_ic_send.xml.flat",
+        "source": "com.telebirr.superapp-main-52:/drawable/ic_send.xml"
+    },
+    {
+        "merged": "com.telebirr.superapp-merged_res-50:/drawable_ic_target.xml.flat",
+        "source": "com.telebirr.superapp-main-52:/drawable/ic_target.xml"
+    },
+    {
+        "merged": "com.telebirr.superapp-merged_res-50:/drawable_bg_circle_green.xml.flat",
+        "source": "com.telebirr.superapp-main-52:/drawable/bg_circle_green.xml"
+    },
+    {
+        "merged": "com.telebirr.superapp-merged_res-50:/drawable_ic_profile.xml.flat",
+        "source": "com.telebirr.superapp-main-52:/drawable/ic_profile.xml"
+    },
+    {
+        "merged": "com.telebirr.superapp-merged_res-50:/drawable_ic_message.xml.flat",
+        "source": "com.telebirr.superapp-main-52:/drawable/ic_message.xml"
+    },
+    {
+        "merged": "com.telebirr.superapp-merged_res-50:/drawable_ic_chevron_right.xml.flat",
+        "source": "com.telebirr.superapp-main-52:/drawable/ic_chevron_right.xml"
+    },
+    {
+        "merged": "com.telebirr.superapp-merged_res-50:/mipmap-anydpi-v26_ic_launcher_round.xml.flat",
+        "source": "com.telebirr.superapp-main-52:/mipmap-anydpi-v26/ic_launcher_round.xml"
+    },
+    {
+        "merged": "com.telebirr.superapp-merged_res-50:/mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "com.telebirr.superapp-main-52:/mipmap-anydpi-v26/ic_launcher.xml"
+    },
+    {
+        "merged": "com.telebirr.superapp-merged_res-50:/drawable_ic_wifi.xml.flat",
+        "source": "com.telebirr.superapp-main-52:/drawable/ic_wifi.xml"
+    },
+    {
+        "merged": "com.telebirr.superapp-merged_res-50:/drawable_ic_check_circle.xml.flat",
+        "source": "com.telebirr.superapp-main-52:/drawable/ic_check_circle.xml"
+    },
+    {
+        "merged": "com.telebirr.superapp-merged_res-50:/drawable_ic_scan_line.xml.flat",
+        "source": "com.telebirr.superapp-main-52:/drawable/ic_scan_line.xml"
+    },
+    {
+        "merged": "com.telebirr.superapp-merged_res-50:/drawable_ic_search_x.xml.flat",
+        "source": "com.telebirr.superapp-main-52:/drawable/ic_search_x.xml"
+    },
+    {
+        "merged": "com.telebirr.superapp-merged_res-50:/layout_fragment_scan.xml.flat",
+        "source": "com.telebirr.superapp-main-52:/layout/fragment_scan.xml"
+    },
+    {
+        "merged": "com.telebirr.superapp-merged_res-50:/layout_item_beneficiary.xml.flat",
+        "source": "com.telebirr.superapp-main-52:/layout/item_beneficiary.xml"
+    },
+    {
+        "merged": "com.telebirr.superapp-merged_res-50:/drawable_bg_splash.xml.flat",
+        "source": "com.telebirr.superapp-main-52:/drawable/bg_splash.xml"
+    },
+    {
+        "merged": "com.telebirr.superapp-merged_res-50:/drawable_ic_more.xml.flat",
+        "source": "com.telebirr.superapp-main-52:/drawable/ic_more.xml"
+    },
+    {
+        "merged": "com.telebirr.superapp-merged_res-50:/drawable_bg_circle_orange.xml.flat",
+        "source": "com.telebirr.superapp-main-52:/drawable/bg_circle_orange.xml"
+    },
+    {
+        "merged": "com.telebirr.superapp-merged_res-50:/layout_item_transaction.xml.flat",
+        "source": "com.telebirr.superapp-main-52:/layout/item_transaction.xml"
+    },
+    {
+        "merged": "com.telebirr.superapp-merged_res-50:/layout_fragment_profile.xml.flat",
+        "source": "com.telebirr.superapp-main-52:/layout/fragment_profile.xml"
+    },
+    {
+        "merged": "com.telebirr.superapp-merged_res-50:/drawable_ic_hand_coins.xml.flat",
+        "source": "com.telebirr.superapp-main-52:/drawable/ic_hand_coins.xml"
+    },
+    {
+        "merged": "com.telebirr.superapp-merged_res-50:/drawable_ic_log_out.xml.flat",
+        "source": "com.telebirr.superapp-main-52:/drawable/ic_log_out.xml"
+    },
+    {
+        "merged": "com.telebirr.superapp-merged_res-50:/drawable_ic_flashlight_off.xml.flat",
+        "source": "com.telebirr.superapp-main-52:/drawable/ic_flashlight_off.xml"
+    },
+    {
+        "merged": "com.telebirr.superapp-merged_res-50:/drawable_ic_share.xml.flat",
+        "source": "com.telebirr.superapp-main-52:/drawable/ic_share.xml"
+    },
+    {
+        "merged": "com.telebirr.superapp-merged_res-50:/drawable_ic_launcher_foreground.xml.flat",
+        "source": "com.telebirr.superapp-main-52:/drawable/ic_launcher_foreground.xml"
+    },
+    {
+        "merged": "com.telebirr.superapp-merged_res-50:/drawable_ic_person.xml.flat",
+        "source": "com.telebirr.superapp-main-52:/drawable/ic_person.xml"
+    },
+    {
+        "merged": "com.telebirr.superapp-merged_res-50:/drawable_ic_qr_code.xml.flat",
+        "source": "com.telebirr.superapp-main-52:/drawable/ic_qr_code.xml"
+    },
+    {
+        "merged": "com.telebirr.superapp-merged_res-50:/drawable_ic_pencil.xml.flat",
+        "source": "com.telebirr.superapp-main-52:/drawable/ic_pencil.xml"
+    },
+    {
+        "merged": "com.telebirr.superapp-merged_res-50:/drawable_ic_copy.xml.flat",
+        "source": "com.telebirr.superapp-main-52:/drawable/ic_copy.xml"
+    },
+    {
+        "merged": "com.telebirr.superapp-merged_res-50:/drawable_ic_home.xml.flat",
+        "source": "com.telebirr.superapp-main-52:/drawable/ic_home.xml"
+    },
+    {
+        "merged": "com.telebirr.superapp-merged_res-50:/drawable_bg_input_field.xml.flat",
+        "source": "com.telebirr.superapp-main-52:/drawable/bg_input_field.xml"
+    },
+    {
+        "merged": "com.telebirr.superapp-merged_res-50:/layout_activity_main.xml.flat",
+        "source": "com.telebirr.superapp-main-52:/layout/activity_main.xml"
+    },
+    {
+        "merged": "com.telebirr.superapp-merged_res-50:/drawable_ic_flame.xml.flat",
+        "source": "com.telebirr.superapp-main-52:/drawable/ic_flame.xml"
+    },
+    {
+        "merged": "com.telebirr.superapp-merged_res-50:/drawable_ic_scan.xml.flat",
+        "source": "com.telebirr.superapp-main-52:/drawable/ic_scan.xml"
+    },
+    {
+        "merged": "com.telebirr.superapp-merged_res-50:/drawable_ic_send_horiz.xml.flat",
+        "source": "com.telebirr.superapp-main-52:/drawable/ic_send_horiz.xml"
+    },
+    {
+        "merged": "com.telebirr.superapp-merged_res-50:/drawable_ic_settings.xml.flat",
+        "source": "com.telebirr.superapp-main-52:/drawable/ic_settings.xml"
+    },
+    {
+        "merged": "com.telebirr.superapp-merged_res-50:/drawable_ic_payments.xml.flat",
+        "source": "com.telebirr.superapp-main-52:/drawable/ic_payments.xml"
+    },
+    {
+        "merged": "com.telebirr.superapp-merged_res-50:/drawable_ic_zap.xml.flat",
+        "source": "com.telebirr.superapp-main-52:/drawable/ic_zap.xml"
+    },
+    {
+        "merged": "com.telebirr.superapp-merged_res-50:/drawable_ic_lock.xml.flat",
+        "source": "com.telebirr.superapp-main-52:/drawable/ic_lock.xml"
+    },
+    {
+        "merged": "com.telebirr.superapp-merged_res-50:/drawable_ic_plus.xml.flat",
+        "source": "com.telebirr.superapp-main-52:/drawable/ic_plus.xml"
+    },
+    {
+        "merged": "com.telebirr.superapp-merged_res-50:/layout_fragment_home.xml.flat",
+        "source": "com.telebirr.superapp-main-52:/layout/fragment_home.xml"
+    },
+    {
+        "merged": "com.telebirr.superapp-merged_res-50:/drawable_ic_flashlight.xml.flat",
+        "source": "com.telebirr.superapp-main-52:/drawable/ic_flashlight.xml"
+    },
+    {
+        "merged": "com.telebirr.superapp-merged_res-50:/drawable_ic_search.xml.flat",
+        "source": "com.telebirr.superapp-main-52:/drawable/ic_search.xml"
+    },
+    {
+        "merged": "com.telebirr.superapp-merged_res-50:/drawable_ic_trophy.xml.flat",
+        "source": "com.telebirr.superapp-main-52:/drawable/ic_trophy.xml"
+    },
+    {
+        "merged": "com.telebirr.superapp-merged_res-50:/layout_activity_splash.xml.flat",
+        "source": "com.telebirr.superapp-main-52:/layout/activity_splash.xml"
+    },
+    {
+        "merged": "com.telebirr.superapp-merged_res-50:/drawable_ic_bell.xml.flat",
+        "source": "com.telebirr.superapp-main-52:/drawable/ic_bell.xml"
+    },
+    {
+        "merged": "com.telebirr.superapp-merged_res-50:/drawable_ic_help.xml.flat",
+        "source": "com.telebirr.superapp-main-52:/drawable/ic_help.xml"
+    },
+    {
+        "merged": "com.telebirr.superapp-merged_res-50:/drawable_ic_moon.xml.flat",
+        "source": "com.telebirr.superapp-main-52:/drawable/ic_moon.xml"
+    },
+    {
+        "merged": "com.telebirr.superapp-merged_res-50:/drawable_ic_shield.xml.flat",
+        "source": "com.telebirr.superapp-main-52:/drawable/ic_shield.xml"
+    },
+    {
+        "merged": "com.telebirr.superapp-merged_res-50:/drawable_ic_phone.xml.flat",
+        "source": "com.telebirr.superapp-main-52:/drawable/ic_phone.xml"
+    },
+    {
+        "merged": "com.telebirr.superapp-merged_res-50:/layout_fragment_payments.xml.flat",
+        "source": "com.telebirr.superapp-main-52:/layout/fragment_payments.xml"
+    },
+    {
+        "merged": "com.telebirr.superapp-merged_res-50:/drawable_ic_headset.xml.flat",
+        "source": "com.telebirr.superapp-main-52:/drawable/ic_headset.xml"
+    },
+    {
+        "merged": "com.telebirr.superapp-merged_res-50:/drawable_ic_clock.xml.flat",
+        "source": "com.telebirr.superapp-main-52:/drawable/ic_clock.xml"
+    },
+    {
+        "merged": "com.telebirr.superapp-merged_res-50:/drawable_ic_droplets.xml.flat",
+        "source": "com.telebirr.superapp-main-52:/drawable/ic_droplets.xml"
+    },
+    {
+        "merged": "com.telebirr.superapp-merged_res-50:/drawable_ic_wallet.xml.flat",
+        "source": "com.telebirr.superapp-main-52:/drawable/ic_wallet.xml"
+    },
+    {
+        "merged": "com.telebirr.superapp-merged_res-50:/drawable_ic_globe.xml.flat",
+        "source": "com.telebirr.superapp-main-52:/drawable/ic_globe.xml"
+    },
+    {
+        "merged": "com.telebirr.superapp-merged_res-50:/drawable_ic_wallet_cards.xml.flat",
+        "source": "com.telebirr.superapp-main-52:/drawable/ic_wallet_cards.xml"
+    },
+    {
+        "merged": "com.telebirr.superapp-merged_res-50:/drawable_ic_tv.xml.flat",
+        "source": "com.telebirr.superapp-main-52:/drawable/ic_tv.xml"
+    },
+    {
+        "merged": "com.telebirr.superapp-merged_res-50:/drawable_ic_info.xml.flat",
+        "source": "com.telebirr.superapp-main-52:/drawable/ic_info.xml"
+    },
+    {
+        "merged": "com.telebirr.superapp-merged_res-50:/drawable_ic_file_text.xml.flat",
+        "source": "com.telebirr.superapp-main-52:/drawable/ic_file_text.xml"
+    },
+    {
+        "merged": "com.telebirr.superapp-merged_res-50:/drawable_ic_lightbulb.xml.flat",
+        "source": "com.telebirr.superapp-main-52:/drawable/ic_lightbulb.xml"
+    },
+    {
+        "merged": "com.telebirr.superapp-merged_res-50:/drawable_ic_users.xml.flat",
+        "source": "com.telebirr.superapp-main-52:/drawable/ic_users.xml"
+    },
+    {
+        "merged": "com.telebirr.superapp-merged_res-50:/drawable_ic_star.xml.flat",
+        "source": "com.telebirr.superapp-main-52:/drawable/ic_star.xml"
+    },
+    {
+        "merged": "com.telebirr.superapp-merged_res-50:/drawable_bg_service_icon.xml.flat",
+        "source": "com.telebirr.superapp-main-52:/drawable/bg_service_icon.xml"
+    },
+    {
+        "merged": "com.telebirr.superapp-merged_res-50:/layout_item_service.xml.flat",
+        "source": "com.telebirr.superapp-main-52:/layout/item_service.xml"
+    },
+    {
+        "merged": "com.telebirr.superapp-merged_res-50:/drawable_ic_check.xml.flat",
+        "source": "com.telebirr.superapp-main-52:/drawable/ic_check.xml"
+    },
+    {
+        "merged": "com.telebirr.superapp-merged_res-50:/drawable_ic_download.xml.flat",
+        "source": "com.telebirr.superapp-main-52:/drawable/ic_download.xml"
+    },
+    {
+        "merged": "com.telebirr.superapp-merged_res-50:/drawable_ic_keyboard.xml.flat",
+        "source": "com.telebirr.superapp-main-52:/drawable/ic_keyboard.xml"
+    },
+    {
+        "merged": "com.telebirr.superapp-merged_res-50:/drawable_ic_history.xml.flat",
+        "source": "com.telebirr.superapp-main-52:/drawable/ic_history.xml"
+    },
+    {
+        "merged": "com.telebirr.superapp-merged_res-50:/color_bottom_nav_color.xml.flat",
+        "source": "com.telebirr.superapp-main-52:/color/bottom_nav_color.xml"
+    },
+    {
+        "merged": "com.telebirr.superapp-merged_res-50:/drawable_ic_building.xml.flat",
+        "source": "com.telebirr.superapp-main-52:/drawable/ic_building.xml"
+    },
+    {
+        "merged": "com.telebirr.superapp-merged_res-50:/drawable_ic_soup.xml.flat",
+        "source": "com.telebirr.superapp-main-52:/drawable/ic_soup.xml"
+    },
+    {
+        "merged": "com.telebirr.superapp-merged_res-50:/layout_item_menu_row.xml.flat",
+        "source": "com.telebirr.superapp-main-52:/layout/item_menu_row.xml"
+    },
+    {
+        "merged": "com.telebirr.superapp-merged_res-50:/drawable_bg_chip_selected.xml.flat",
+        "source": "com.telebirr.superapp-main-52:/drawable/bg_chip_selected.xml"
+    },
+    {
+        "merged": "com.telebirr.superapp-merged_res-50:/drawable_ic_eye.xml.flat",
+        "source": "com.telebirr.superapp-main-52:/drawable/ic_eye.xml"
+    },
+    {
+        "merged": "com.telebirr.superapp-merged_res-50:/menu_bottom_nav_menu.xml.flat",
+        "source": "com.telebirr.superapp-main-52:/menu/bottom_nav_menu.xml"
+    },
+    {
+        "merged": "com.telebirr.superapp-merged_res-50:/drawable_ic_launcher_background.xml.flat",
+        "source": "com.telebirr.superapp-main-52:/drawable/ic_launcher_background.xml"
+    },
+    {
+        "merged": "com.telebirr.superapp-merged_res-50:/drawable_ic_smartphone.xml.flat",
+        "source": "com.telebirr.superapp-main-52:/drawable/ic_smartphone.xml"
+    },
+    {
+        "merged": "com.telebirr.superapp-merged_res-50:/navigation_nav_graph.xml.flat",
+        "source": "com.telebirr.superapp-main-52:/navigation/nav_graph.xml"
+    }
+]

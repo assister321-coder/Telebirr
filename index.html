@@ -2,15 +2,20 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover, user-scalable=no" />
     <meta name="theme-color" content="#168A45" />
-    <meta name="description" content="telebirr SuperApp — Ethiopian digital wallet UI demo. No real money moves." />
-    <link rel="icon" type="image/png" href="https://images.sftcdn.net/images/t_app-icon-s/p/6ef58b81-d4cb-4309-b7d9-0228be98241e/2673368560/telebirr-logo" />
-    <link rel="apple-touch-icon" href="https://images.sftcdn.net/images/t_app-icon-s/p/6ef58b81-d4cb-4309-b7d9-0228be98241e/2673368560/telebirr-logo" />
-    <link rel="manifest" href="/manifest.webmanifest" />
+    <meta name="description" content="telebirr SuperApp — Ethiopian digital wallet" />
     <meta name="mobile-web-app-capable" content="yes" />
     <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
     <meta name="apple-mobile-web-app-title" content="telebirr" />
+    <meta name="application-name" content="telebirr" />
+    <meta name="msapplication-TileColor" content="#168A45" />
+    <meta name="msapplication-tap-highlight" content="no" />
+    <meta name="format-detection" content="telephone=no" />
+    <link rel="icon" type="image/svg+xml" href="/icon-192.svg" />
+    <link rel="apple-touch-icon" href="https://images.sftcdn.net/images/t_app-icon-s/p/6ef58b81-d4cb-4309-b7d9-0228be98241e/2673368560/telebirr-logo" />
+    <link rel="manifest" href="/manifest.webmanifest" />
     <title>telebirr SuperApp</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -18,9 +23,163 @@
       href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Noto+Sans+Ethiopic:wght@400;500;600;700&display=swap"
       rel="stylesheet"
     />
+    <style>
+      /* Prevent pull-to-refresh and overscroll */
+      html, body {
+        overscroll-behavior: none;
+        -webkit-overflow-scrolling: touch;
+        position: fixed;
+        width: 100%;
+        height: 100%;
+      }
+      #root {
+        width: 100%;
+        height: 100%;
+        overflow-y: auto;
+        -webkit-overflow-scrolling: touch;
+      }
+      /* PWA install banner */
+      #install-banner {
+        display: none;
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background: #168A45;
+        color: white;
+        padding: 12px 16px;
+        z-index: 9999;
+        box-shadow: 0 -4px 20px rgba(0,0,0,0.2);
+      }
+      #install-banner.show { display: flex; }
+      #install-banner .content {
+        flex: 1;
+        display: flex;
+        align-items: center;
+        gap: 12px;
+      }
+      #install-banner .icon {
+        width: 40px;
+        height: 40px;
+        border-radius: 10px;
+        background: white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      #install-banner .icon svg { width: 28px; height: 28px; }
+      #install-banner .text { flex: 1; }
+      #install-banner .text .title { font-weight: 700; font-size: 14px; }
+      #install-banner .text .sub { font-size: 11px; opacity: 0.8; }
+      #install-banner .btn {
+        background: white;
+        color: #168A45;
+        border: none;
+        border-radius: 20px;
+        padding: 8px 20px;
+        font-weight: 700;
+        font-size: 13px;
+        cursor: pointer;
+      }
+      #install-banner .close {
+        background: none;
+        border: none;
+        color: white;
+        font-size: 18px;
+        margin-left: 8px;
+        cursor: pointer;
+        opacity: 0.7;
+      }
+      /* Splash screen */
+      #splash {
+        position: fixed;
+        inset: 0;
+        background: #8CC63F;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        z-index: 99999;
+        transition: opacity 0.3s;
+      }
+      #splash.hide { opacity: 0; pointer-events: none; }
+    </style>
   </head>
   <body>
+    <!-- Splash screen -->
+    <div id="splash">
+      <div style="text-align:center">
+        <div style="font-size:42px;font-weight:800;color:white;font-family:sans-serif">telebirr</div>
+        <div style="font-size:36px;font-weight:800;margin-top:8px;font-family:sans-serif">
+          <span style="color:#0875A5">Super</span><span style="color:#F2A61B">App</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Install banner -->
+    <div id="install-banner">
+      <div class="content">
+        <div class="icon">
+          <svg width="28" height="28" viewBox="0 0 192 192">
+            <circle cx="96" cy="96" r="56" fill="#168A45"/>
+            <text x="96" y="112" text-anchor="middle" font-family="Arial" font-weight="bold" font-size="48" fill="#FFF">t</text>
+          </svg>
+        </div>
+        <div class="text">
+          <div class="title">Install telebirr</div>
+          <div class="sub">Add to home screen for quick access</div>
+        </div>
+      </div>
+      <button class="btn" id="install-btn">Install</button>
+      <button class="close" id="install-close">&times;</button>
+    </div>
+
     <div id="root"></div>
     <script type="module" src="/src/main.tsx"></script>
+    <script>
+      // Register service worker
+      if ('serviceWorker' in navigator) {
+        window.addEventListener('load', () => {
+          navigator.serviceWorker.register('/sw.js').catch(() => {});
+        });
+      }
+
+      // Hide splash after app loads
+      window.addEventListener('load', () => {
+        setTimeout(() => {
+          const splash = document.getElementById('splash');
+          if (splash) { splash.classList.add('hide'); setTimeout(() => splash.remove(), 400); }
+        }, 1500);
+      });
+
+      // PWA Install prompt
+      let deferredPrompt;
+      const installBanner = document.getElementById('install-banner');
+      const installBtn = document.getElementById('install-btn');
+      const installClose = document.getElementById('install-close');
+
+      window.addEventListener('beforeinstallprompt', (e) => {
+        e.preventDefault();
+        deferredPrompt = e;
+        installBanner.classList.add('show');
+      });
+
+      installBtn?.addEventListener('click', () => {
+        if (!deferredPrompt) return;
+        deferredPrompt.prompt();
+        deferredPrompt.userChoice.then((result) => {
+          if (result.outcome === 'accepted') installBanner.classList.remove('hide');
+          deferredPrompt = null;
+        });
+      });
+
+      installClose?.addEventListener('click', () => {
+        installBanner.classList.remove('show');
+      });
+
+      window.addEventListener('appinstalled', () => {
+        installBanner.classList.remove('show');
+      });
+    </script>
   </body>
 </html>

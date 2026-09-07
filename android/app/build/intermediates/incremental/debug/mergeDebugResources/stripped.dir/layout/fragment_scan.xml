@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#050D09">
+
+    <!-- Header -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/header_height"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:paddingHorizontal="@dimen/spacing_lg">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/scan_title"
+            android:textSize="@dimen/text_lg"
+            android:textStyle="bold"
+            android:textColor="@color/text_white" />
+
+        <ImageButton
+            android:id="@+id/btnClose"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:src="@drawable/ic_close"
+            android:contentDescription="Close"
+            android:scaleType="centerInside" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:paddingHorizontal="@dimen/spacing_xl">
+
+        <!-- Viewfinder -->
+        <FrameLayout
+            android:layout_width="300dp"
+            android:layout_height="300dp">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/bg_service_icon" />
+
+            <!-- Scan line animation placeholder -->
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="3dp"
+                android:layout_gravity="center_vertical"
+                android:background="@color/brand_primary_light" />
+        </FrameLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/scan_hint"
+            android:textSize="@dimen/text_md"
+            android:textColor="@color/text_white"
+            android:layout_marginTop="@dimen/spacing_xl" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/scan_demo"
+            android:textSize="@dimen/text_xs"
+            android:textColor="#66FFFFFF"
+            android:layout_marginTop="@dimen/spacing_sm" />
+
+        <!-- Manual input -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="@dimen/spacing_xxl"
+            android:background="@drawable/bg_service_icon"
+            android:padding="@dimen/spacing_xs">
+
+            <EditText
+                android:id="@+id/etMerchantCode"
+                android:layout_width="0dp"
+                android:layout_height="44dp"
+                android:layout_weight="1"
+                android:background="@null"
+                android:hint="@string/scan_manual_ph"
+                android:textSize="@dimen/text_sm"
+                android:textColor="@color/text_white"
+                android:textColorHint="#66FFFFFF"
+                android:inputType="text"
+                android:maxLines="1"
+                android:paddingHorizontal="@dimen/spacing_md" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnManualPay"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:text="@string/scan_pay"
+                android:textSize="@dimen/text_sm"
+                android:textAllCaps="false"
+                android:layout_marginStart="@dimen/spacing_sm" />
+        </LinearLayout>
+
+        <!-- Action buttons -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="@dimen/spacing_xxl">
+
+            <ImageButton
+                android:id="@+id/btnFlashlight"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:background="@drawable/bg_service_icon"
+                android:src="@drawable/ic_flashlight"
+                android:contentDescription="Flashlight"
+                android:scaleType="centerInside"
+                android:layout_marginEnd="@dimen/spacing_md" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnEnterManually"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:text="@string/scan_manual"
+                android:textSize="@dimen/text_md"
+                android:textAllCaps="false"
+                android:backgroundTint="@color/text_white"
+                android:textColor="@color/text_primary" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

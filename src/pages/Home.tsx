@@ -117,7 +117,7 @@ export default function Home() {
       <div className="bg-[#8CC63F] text-white">
         <StatusBar dark className="!h-14 text-[16px]" />
       </div>
-      <div className="flex h-[56px] items-center justify-between overflow-visible px-4 bg-white border-b border-[#e7ece8]">
+      <div className="flex h-[50px] items-center justify-between overflow-visible px-4 bg-white border-b border-[#e7ece8]">
         <div className="flex h-full w-[150px] min-w-0 shrink-0 items-center overflow-hidden">
           <EthioTelecomLogo scale={1} />
         </div>
@@ -139,16 +139,16 @@ export default function Home() {
 
         <div className="relative flex items-center gap-3">
           <button onClick={() => navigate("profile")}>
-            <span className="block h-[52px] w-[52px] rounded-full bg-[#f52250]" aria-label={user.name} />
+            <span className="block h-[48px] w-[48px] rounded-full bg-[#f52250]" aria-label={user.name} />
           </button>
-          <p className="flex-1 min-w-0 text-[20px] font-normal truncate">
+          <p className="flex-1 min-w-0 text-[18px] font-normal truncate">
             {t(greetingKey(now))}, {firstName}
           </p>
           <button onClick={() => toast(t("demo.feature"), false)} className="w-9 h-9 flex items-center justify-center">
-            <Search size={26} strokeWidth={1.8} />
+            <Search size={22} strokeWidth={1.8} />
           </button>
           <button onClick={() => setNotifOpen(true)} className="relative w-9 h-9 flex items-center justify-center">
-            <Bell size={25} strokeWidth={1.8} />
+            <Bell size={22} strokeWidth={1.8} />
             {unread > 0 && <span className="absolute top-1 right-1.5 w-1.5 h-1.5 rounded-full bg-warn" />}
           </button>
           <div className="relative">
@@ -183,29 +183,29 @@ export default function Home() {
         </div>
 
         <div className="relative flex flex-col items-center mt-5">
-          <button onClick={toggleHidden} className="flex items-center gap-2 text-[20px] font-semibold">
+          <button onClick={toggleHidden} className="flex items-center gap-2 text-[18px] font-semibold">
             {t("bal.available")}
             {balanceHidden ? <EyeOff size={18} /> : <Eye size={18} />}
           </button>
-          <p className="text-[34px] font-bold tracking-tight mt-2 tabular-nums">
+          <p className="text-[30px] font-bold tracking-tight mt-2 tabular-nums">
             {balanceHidden ? "••••••" : balance.toLocaleString("en-US", { minimumFractionDigits: 2 })}
           </p>
         </div>
 
         <div className="relative grid grid-cols-2 gap-3 mt-4 max-w-[440px] mx-auto">
           <button onClick={() => setShowSub((v) => !v)} className="text-center">
-            <span className="flex items-center gap-2 text-[17px] font-semibold">
-              {t("home.savings")}
-              {showSub ? <Eye size={12} /> : <EyeOff size={12} />}
-            </span>
-            <p className="text-[22px] font-bold mt-1">{showSub ? "1,050.00" : "--"}</p>
+              <span className="flex items-center gap-2 text-[15px] font-semibold">
+                {t("home.savings")}
+                {showSub ? <Eye size={11} /> : <EyeOff size={11} />}
+              </span>
+              <p className="text-[20px] font-bold mt-1">{showSub ? "1,050.00" : "--"}</p>
           </button>
           <button onClick={() => setShowSub((v) => !v)} className="text-center">
-            <span className="flex items-center gap-2 text-[17px] font-semibold">
-              {t("home.rewards")}
-              {showSub ? <Eye size={12} /> : <EyeOff size={12} />}
-            </span>
-            <p className="text-[22px] font-bold mt-1">{showSub ? "18.40" : "0.00"}</p>
+              <span className="flex items-center gap-2 text-[15px] font-semibold">
+                {t("home.rewards")}
+                {showSub ? <Eye size={11} /> : <EyeOff size={11} />}
+              </span>
+              <p className="text-[20px] font-bold mt-1">{showSub ? "18.40" : "0.00"}</p>
           </button>
         </div>
       </div>
@@ -248,12 +248,12 @@ export default function Home() {
                       </span>
                     )}
                     <span
-                      className={`flex h-11 w-11 items-center justify-center shrink-0 xs:h-12 xs:w-12 ${index === 3 ? "rounded-full bg-[#073d32] text-[7px] font-bold text-white" : ""}`}
+                      className={`flex h-10 w-10 items-center justify-center shrink-0 xs:h-[42px] xs:w-[42px] ${index === 3 ? "rounded-full bg-[#073d32] text-[7px] font-bold text-white" : ""}`}
                       style={index === 3 ? undefined : { color: s.fg }}
                     >
-                      {index === 3 ? "ZEMEN" : <Icon size={index < 4 ? 35 : 30} strokeWidth={1.5} />}
+                      {index === 3 ? "ZEMEN" : <Icon size={index < 4 ? 30 : 26} strokeWidth={1.5} />}
                     </span>
-                    <span className="text-[14px] font-normal text-center leading-tight text-ink w-full break-words hyphens-auto">
+                    <span className="text-[12.5px] font-normal text-center leading-tight text-ink w-full break-words hyphens-auto">
                       {[
                         "Send Money",
                         "Cash In/Out",
@@ -280,9 +280,9 @@ export default function Home() {
               variants={rise}
               whileTap={{ scale: 0.98 }}
               onClick={() => navigate("scan")}
-              className="w-full h-[52px] rounded-2xl bg-[#2F80ED] hover:bg-[#2569c4] text-white font-bold text-[15px] flex items-center justify-center gap-2 shadow-[0_10px_22px_rgba(47,128,237,0.3)] transition-colors"
+              className="w-full h-[48px] rounded-2xl bg-[#2F80ED] hover:bg-[#2569c4] text-white font-bold text-[14px] flex items-center justify-center gap-2 shadow-[0_10px_22px_rgba(47,128,237,0.3)] transition-colors"
             >
-              <QrCode size={19} />
+              <QrCode size={17} />
               {t("home.scanQr")}
             </motion.button>
           </div>
@@ -318,7 +318,7 @@ export default function Home() {
                 onClick={() => { setSendChooserOpen(false); navigate("send"); }}
                 className="flex w-full items-center gap-4 px-6 py-5 text-left text-[18px] text-[#24352b]"
               >
-                <Send size={29} strokeWidth={1.6} className="text-[#8CC63F]" />
+                <Send size={24} strokeWidth={1.6} className="text-[#8CC63F]" />
                 <span>To Individual</span>
               </button>
               <div className="h-px bg-[#edf0ec]" />
@@ -326,7 +326,7 @@ export default function Home() {
                 onClick={() => { setSendChooserOpen(false); toast(t("demo.feature"), false); }}
                 className="flex w-full items-center gap-4 px-6 py-5 text-left text-[18px] text-[#24352b]"
               >
-                <UsersRound size={29} strokeWidth={1.6} className="text-[#8CC63F]" />
+                <UsersRound size={24} strokeWidth={1.6} className="text-[#8CC63F]" />
                 <span>To Group</span>
               </button>
             </motion.div>

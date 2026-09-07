@@ -3,6 +3,7 @@ package com.telebirr.superapp.ui.adapters
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.telebirr.superapp.R
@@ -47,8 +48,9 @@ class TransactionAdapter(
             TxKind.MERCHANT -> R.drawable.ic_qr_code to R.color.tx_merchant
         }
         holder.iconBg.setBackgroundResource(R.drawable.bg_service_icon)
-        holder.iconView.setImageResource(iconRes)
-        holder.iconView.setColorFilter(holder.itemView.context.getColor(color))
+        holder.ivIcon.setImageResource(iconRes)
+        holder.ivIcon.setColorFilter(holder.itemView.context.getColor(color))
+        holder.ivIcon.visibility = View.VISIBLE
 
         holder.itemView.setOnClickListener {
             // Navigate to transaction detail
@@ -59,7 +61,7 @@ class TransactionAdapter(
 
     class ViewHolder(view: View) : RecyclerView.ViewHolder(view) {
         val iconBg: View = view.findViewById(R.id.iconBg)
-        val iconView: TextView = view.findViewById(R.id.iconView)
+        val ivIcon: ImageView = view.findViewById(R.id.ivIcon)
         val tvTitle: TextView = view.findViewById(R.id.tvTitle)
         val tvAmount: TextView = view.findViewById(R.id.tvAmount)
         val tvDate: TextView = view.findViewById(R.id.tvDate)

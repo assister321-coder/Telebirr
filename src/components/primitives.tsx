@@ -33,14 +33,14 @@ export function Btn({
     <motion.button
       whileTap={{ scale: disabled || loading ? 1 : 0.97 }}
       disabled={disabled || loading}
-      className={`h-14 w-full rounded-2xl px-5 text-[15px] font-semibold transition-colors flex items-center justify-center gap-2 select-none disabled:opacity-50 disabled:pointer-events-none ${styles} ${className}`}
+      className={`h-[50px] w-full rounded-2xl px-5 text-[13.5px] font-semibold transition-colors flex items-center justify-center gap-2 select-none disabled:opacity-50 disabled:pointer-events-none ${styles} ${className}`}
       {...(rest as any)}
     >
       {loading ? (
         <Loader2 size={20} className="animate-spin" />
       ) : (
         <>
-          {Icon && <Icon size={19} strokeWidth={2.2} />}
+          {Icon &&         <Icon size={17} strokeWidth={2.2} />}
           {children}
         </>
       )}
@@ -86,14 +86,14 @@ export function SectionTitle({
 }) {
   return (
     <div className="flex items-center justify-between px-1">
-      <h2 className="text-[17px] font-semibold tracking-tight">{title}</h2>
+      <h2 className="text-[15px] font-semibold tracking-tight">{title}</h2>
       {action && (
         <button
           onClick={onAction}
-          className="text-[13px] font-semibold text-brand-500 hover:text-brand-600 flex items-center gap-0.5"
+          className="text-[12px] font-semibold text-brand-500 hover:text-brand-600 flex items-center gap-0.5"
         >
           {action}
-          <ChevronRight size={15} />
+          <ChevronRight size={13} />
         </button>
       )}
     </div>
@@ -160,16 +160,16 @@ export function ListRow({
       className="w-full flex items-center gap-3.5 px-4 py-3.5 text-left"
     >
       <div
-        className="w-9 h-9 rounded-xl flex items-center justify-center shrink-0"
+        className="w-[34px] h-[34px] rounded-[10px] flex items-center justify-center shrink-0"
         style={{ background: `${danger ? "#D93636" : tint}14`, color: danger ? "#D93636" : tint }}
       >
-        <Icon size={18} strokeWidth={2.1} />
+        <Icon size={16} strokeWidth={2.1} />
       </div>
       <div className="flex-1 min-w-0">
-        <p className={`text-[14.5px] font-medium truncate ${danger ? "text-danger" : ""}`}>{title}</p>
-        {sub && <p className="text-[12px] text-sub truncate mt-0.5">{sub}</p>}
+        <p className={`text-[13px] font-medium truncate ${danger ? "text-danger" : ""}`}>{title}</p>
+        {sub && <p className="text-[11px] text-sub truncate mt-0.5">{sub}</p>}
       </div>
-      {right ?? <ChevronRight size={17} className="text-sub shrink-0" />}
+      {right ?? <ChevronRight size={15} className="text-sub shrink-0" />}
     </motion.button>
   );
 }

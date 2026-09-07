@@ -1,0 +1,50 @@
+[
+    {
+        "merged": "com.telebirr.superapp-mergeDebugResources-49:/layout/fragment_home.xml",
+        "source": "com.telebirr.superapp-main-52:/layout/fragment_home.xml"
+    },
+    {
+        "merged": "com.telebirr.superapp-mergeDebugResources-49:/layout/fragment_transactions.xml",
+        "source": "com.telebirr.superapp-main-52:/layout/fragment_transactions.xml"
+    },
+    {
+        "merged": "com.telebirr.superapp-mergeDebugResources-49:/layout/item_transaction.xml",
+        "source": "com.telebirr.superapp-main-52:/layout/item_transaction.xml"
+    },
+    {
+        "merged": "com.telebirr.superapp-mergeDebugResources-49:/layout/fragment_payments.xml",
+        "source": "com.telebirr.superapp-main-52:/layout/fragment_payments.xml"
+    },
+    {
+        "merged": "com.telebirr.superapp-mergeDebugResources-49:/layout/activity_splash.xml",
+        "source": "com.telebirr.superapp-main-52:/layout/activity_splash.xml"
+    },
+    {
+        "merged": "com.telebirr.superapp-mergeDebugResources-49:/layout/activity_login.xml",
+        "source": "com.telebirr.superapp-main-52:/layout/activity_login.xml"
+    },
+    {
+        "merged": "com.telebirr.superapp-mergeDebugResources-49:/layout/item_beneficiary.xml",
+        "source": "com.telebirr.superapp-main-52:/layout/item_beneficiary.xml"
+    },
+    {
+        "merged": "com.telebirr.superapp-mergeDebugResources-49:/layout/fragment_scan.xml",
+        "source": "com.telebirr.superapp-main-52:/layout/fragment_scan.xml"
+    },
+    {
+        "merged": "com.telebirr.superapp-mergeDebugResources-49:/layout/item_menu_row.xml",
+        "source": "com.telebirr.superapp-main-52:/layout/item_menu_row.xml"
+    },
+    {
+        "merged": "com.telebirr.superapp-mergeDebugResources-49:/layout/activity_main.xml",
+        "source": "com.telebirr.superapp-main-52:/layout/activity_main.xml"
+    },
+    {
+        "merged": "com.telebirr.superapp-mergeDebugResources-49:/layout/fragment_profile.xml",
+        "source": "com.telebirr.superapp-main-52:/layout/fragment_profile.xml"
+    },
+    {
+        "merged": "com.telebirr.superapp-mergeDebugResources-49:/layout/item_service.xml",
+        "source": "com.telebirr.superapp-main-52:/layout/item_service.xml"
+    }
+]
